@@ -1,476 +1,392 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZG3BXN6PC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8ZG3BXN6PC');
-</script>
-<!-- End Google Analytics -->
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZG3BXN6PC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8ZG3BXN6PC');
+  </script>
+  <!-- SEO -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="موقع تعريفي تفاعلي عن هندسة الحاسوب والاتصالات">
-  <title>هندسة الحاسوب والاتصالات | مهندس المستقبل</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="دليل تعليمي شامل لهندسة الحاسوب والاتصالات: مجالات التخصص، المواد، خارطة الطريق، مصادر التعلم وفرص العمل.">
+  <meta name="keywords" content="هندسة الحاسوب والاتصالات, هندسة الحاسوب, شبكات, إلكترونيات, برمجة, اتصالات, أنظمة مدمجة">
+  <meta name="author" content="أحمد شادي الطيبي">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#071426">
+  <link rel="canonical" href="https://ahmedshadytiby1-afk.github.io/my-ah-cce/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:title" content="مهندس المستقبل | هندسة الحاسوب والاتصالات">
+  <meta property="og:description" content="اكتشف تخصص هندسة الحاسوب والاتصالات، وتعرّف إلى مواده ومجالاته وخارطة طريقك الهندسية.">
+  <meta property="og:url" content="https://ahmedshadytiby1-afk.github.io/my-ah-cce/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=85">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="مهندس المستقبل | هندسة الحاسوب والاتصالات">
+  <meta name="twitter:description" content="دليل تعليمي تفاعلي لطلاب هندسة الحاسوب والاتصالات.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=85">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='85'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
+  <title>مهندس المستقبل | هندسة الحاسوب والاتصالات</title>
   <style>
-    :root {
-      --bg: #071426;
-      --panel: #102743;
-      --panel-dark: #0b1f3a;
-      --accent: #00bfff;
-      --text: #f5f8ff;
-      --muted: #cbd7e8;
+    :root{
+      color-scheme:dark;
+      --bg:#071426;--panel:#102743;--panel2:#0b1f3a;--text:#f5f8ff;
+      --muted:#b8c8dc;--accent:#19c5ff;--accent2:#7c6cff;--line:#214565;
+      --header:rgba(7,20,38,.92);--shadow:0 14px 38px rgba(0,0,0,.22);
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: Tahoma, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.9;
+    body.light{
+      color-scheme:light;--bg:#f3f7fc;--panel:#fff;--panel2:#eaf1f9;
+      --text:#14263d;--muted:#52657d;--accent:#007db5;--accent2:#6654d9;
+      --line:#d5e1ed;--header:rgba(255,255,255,.93);--shadow:0 12px 32px rgba(25,55,90,.10);
     }
-    a { color: inherit; }
-    header {
-      position: sticky; top: 0; z-index: 10;
-      display: flex; justify-content: space-between; align-items: center;
-      gap: 16px; flex-wrap: wrap; padding: 16px 7%;
-      background: var(--panel-dark); border-bottom: 2px solid var(--accent);
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:95px}
+    body{font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.85;transition:background .25s,color .25s}
+    a{color:inherit}
+    button{font:inherit}
+    .container{width:min(1160px,92%);margin:auto}
+    .site-header{position:sticky;top:0;z-index:50;background:var(--header);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav-wrap{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{font-weight:900;font-size:1.25rem;color:var(--accent);text-decoration:none;white-space:nowrap}
+    .main-nav{display:flex;align-items:center;gap:5px}
+    .main-nav a{padding:9px 11px;text-decoration:none;color:var(--muted);border-radius:9px;font-size:.92rem;transition:.2s}
+    .main-nav a:hover,.main-nav a.active{color:var(--accent);background:var(--panel2)}
+    .nav-actions{display:flex;align-items:center;gap:8px}
+    .icon-btn,.menu-btn{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:10px;padding:8px 11px;cursor:pointer}
+    .menu-btn{display:none;font-size:1.2rem}
+    .hero{position:relative;isolation:isolate;min-height:560px;display:grid;place-items:center;text-align:center;padding:85px 5%;background:linear-gradient(120deg,rgba(3,13,29,.92),rgba(5,31,57,.78)),url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80") center/cover}
+    .hero:after{content:"";position:absolute;inset:auto 0 0;height:130px;background:linear-gradient(transparent,var(--bg));z-index:-1}
+    .hero-inner{max-width:850px}
+    .eyebrow{display:inline-block;color:#8be2ff;border:1px solid #48bde755;background:#0a385866;padding:5px 15px;border-radius:30px;margin-bottom:18px}
+    .hero h1{font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.25;color:#fff;margin-bottom:18px}
+    .hero p{font-size:clamp(1rem,2vw,1.2rem);color:#e3edf8;max-width:760px;margin:0 auto 28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;border:0;border-radius:30px;padding:11px 23px;background:linear-gradient(100deg,#008bd0,#19c5ff);color:#fff;font-weight:bold;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-3px);filter:brightness(1.08)}
+    .btn.secondary{background:var(--panel);border:1px solid var(--line);color:var(--text)}
+    section{padding:76px 0}
+    .section-head{text-align:center;max-width:760px;margin:0 auto 38px}
+    .section-head .kicker{color:var(--accent);font-weight:bold}
+    .section-head h2{font-size:clamp(1.7rem,4vw,2.45rem);margin:5px 0 10px}
+    .section-head p{color:var(--muted)}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:-34px;position:relative;z-index:2}
+    .stat{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:21px;text-align:center;box-shadow:var(--shadow)}
+    .stat strong{display:block;font-size:2rem;color:var(--accent);line-height:1.3}
+    .stat span{color:var(--muted);font-size:.93rem}
+    .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
+    .about-copy{color:var(--muted);font-size:1.05rem}
+    .about-copy p+p{margin-top:14px}
+    .about-visual{min-height:290px;border-radius:22px;background:linear-gradient(140deg,#06385b99,#111b4c88),url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80") center/cover;box-shadow:var(--shadow)}
+    .fields-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .field-card{background:var(--panel);border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:var(--shadow);transition:transform .25s,border-color .25s}
+    .field-card:hover{transform:translateY(-7px);border-color:var(--accent)}
+    .field-card img{display:block;width:100%;height:190px;object-fit:cover}
+    .field-content{padding:20px}
+    .field-number{font-size:.8rem;color:var(--accent);font-weight:bold;letter-spacing:1px}
+    .field-content h3{margin:5px 0 8px;font-size:1.2rem}
+    .field-content p{color:var(--muted);font-size:.94rem;min-height:76px}
+    .field-content button{margin-top:13px;background:transparent;border:0;color:var(--accent);font-weight:bold;cursor:pointer}
+    .soft-section{background:var(--panel2)}
+    .subjects-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;list-style:none}
+    .subjects-list li{background:var(--panel);padding:13px 17px;border-radius:11px;border:1px solid var(--line)}
+    .subjects-list li:before{content:"✓";color:var(--accent);font-weight:bold;margin-left:9px}
+    body[dir="ltr"] .subjects-list li:before{margin-left:0;margin-right:9px}
+    .roadmap{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+    .year-card{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px 18px;overflow:hidden}
+    .year-card:before{content:attr(data-year);position:absolute;top:-20px;left:8px;font-size:5rem;font-weight:900;color:var(--accent);opacity:.09}
+    .year-card h3{color:var(--accent);margin-bottom:10px}
+    .year-card p{color:var(--muted);font-size:.93rem}
+    .year-card ul{padding-inline-start:20px;margin-top:12px;font-size:.9rem}
+    .year-card li{margin:5px 0}
+    .note{margin-top:20px;padding:14px 18px;border-right:4px solid var(--accent);background:var(--panel);border-radius:9px;color:var(--muted)}
+    body[dir="ltr"] .note{border-right:0;border-left:4px solid var(--accent)}
+    .resources-grid,.jobs-grid,.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .resource,.job,.blog-card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:21px;transition:.2s}
+    .resource:hover,.job:hover,.blog-card:hover{transform:translateY(-4px);border-color:var(--accent)}
+    .resource .emoji,.job .emoji{font-size:2rem}
+    .resource h3,.job h3,.blog-card h3{margin:8px 0;color:var(--accent)}
+    .resource p,.job p,.blog-card p{color:var(--muted);font-size:.93rem}
+    .resource a,.blog-card button{display:inline-block;margin-top:12px;color:var(--accent);font-weight:bold;text-decoration:none}
+    .jobs-grid{grid-template-columns:repeat(3,1fr)}
+    .faq-list{max-width:850px;margin:auto;display:grid;gap:12px}
+    .faq-item{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+    .faq-question{width:100%;text-align:right;background:none;color:var(--text);border:0;padding:17px 20px;cursor:pointer;font-weight:bold;display:flex;justify-content:space-between;gap:12px}
+    body[dir="ltr"] .faq-question{text-align:left}
+    .faq-answer{display:none;padding:0 20px 18px;color:var(--muted)}
+    .faq-item.open .faq-answer{display:block}
+    .faq-item.open .faq-question{color:var(--accent)}
+    .blog-card{padding:0;overflow:hidden}
+    .blog-card img{width:100%;height:165px;object-fit:cover;display:block}
+    .blog-copy{padding:18px}
+    .blog-copy button{background:none;border:0;cursor:pointer}
+    .cta{background:linear-gradient(120deg,#07365c,#15234e);text-align:center;border-radius:22px;padding:45px 25px}
+    .cta h2{color:#fff;font-size:clamp(1.5rem,4vw,2.2rem)}
+    .cta p{color:#d5e5f5;margin:10px auto 22px;max-width:700px}
+    footer{padding:30px 0;background:#030b16;color:#d6e2ef;text-align:center;border-top:2px solid var(--accent)}
+    footer strong{color:#43cfff}
+    .modal{display:none;position:fixed;inset:0;z-index:100;background:#000b;padding:20px;align-items:center;justify-content:center}
+    .modal.show{display:flex}
+    .modal-box{width:min(760px,100%);max-height:88vh;overflow:auto;background:var(--panel);border:1px solid var(--accent);border-radius:17px;padding:25px;box-shadow:var(--shadow)}
+    .modal-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:15px}
+    .modal-head h2{color:var(--accent)}
+    .close{background:transparent;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:4px 12px;font-size:1.4rem;cursor:pointer}
+    .modal-body h3{color:var(--accent);margin:17px 0 5px}
+    .modal-body p,.modal-body li{color:var(--muted)}
+    .modal-body ul{padding-inline-start:23px}
+    .to-top{position:fixed;bottom:22px;left:22px;z-index:40;width:46px;height:46px;border:0;border-radius:50%;background:var(--accent);color:#06223a;font-size:1.3rem;font-weight:bold;cursor:pointer;display:none;box-shadow:var(--shadow)}
+    body[dir="ltr"] .to-top{left:auto;right:22px}
+    .to-top.visible{display:block}
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+    .reveal.visible{opacity:1;transform:none}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+    @media(max-width:900px){
+      .menu-btn{display:block}
+      .main-nav{display:none;position:absolute;top:76px;right:4%;left:4%;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}
+      body[dir="ltr"] .main-nav{right:4%;left:4%}
+      .main-nav.open{display:flex}
+      .main-nav a{padding:11px}
+      .fields-grid{grid-template-columns:repeat(2,1fr)}
+      .roadmap{grid-template-columns:repeat(2,1fr)}
+      .about-grid{grid-template-columns:1fr}
+      .about-visual{min-height:240px}
     }
-    header h2 { color: var(--accent); font-size: 1.35rem; }
-    nav { display: flex; flex-wrap: wrap; gap: 8px 16px; }
-    nav a { text-decoration: none; }
-    nav a:hover, nav a:focus { color: var(--accent); }
-    .hero {
-      min-height: 440px; display: grid; place-items: center; text-align: center;
-      padding: 70px 6%;
-      background: linear-gradient(rgba(3,15,35,.82), rgba(3,15,35,.88)),
-        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=85") center/cover;
-    }
-    .hero h1 { color: var(--accent); font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 14px; }
-    .hero p { max-width: 780px; margin: 0 auto 24px; font-size: 1.1rem; }
-    .button {
-      display: inline-block; border: 0; cursor: pointer; background: #008cff;
-      color: white; text-decoration: none; padding: 10px 25px; border-radius: 30px;
-      font-weight: bold; transition: .2s;
-    }
-    .button:hover { background: var(--accent); transform: translateY(-2px); }
-    section { padding: 56px 7%; scroll-margin-top: 100px; }
-    .section-title { text-align: center; color: var(--accent); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 30px; }
-    .about { max-width: 950px; margin: auto; text-align: center; font-size: 1.08rem; }
-    .cards, .jobs {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
-      gap: 22px;
-    }
-    .card {
-      background: var(--panel); border: 1px solid #17476b; border-radius: 15px;
-      overflow: hidden; transition: transform .2s, box-shadow .2s, border-color .2s;
-    }
-    .card:hover { transform: translateY(-5px); border-color: var(--accent); box-shadow: 0 5px 22px #003c6755; }
-    .card-image {
-      position: relative; cursor: pointer; outline-offset: -4px;
-    }
-    .card-image:focus-visible { outline: 3px solid var(--accent); }
-    .card img { display: block; width: 100%; height: 200px; object-fit: cover; }
-    .image-hint {
-      position: absolute; inset: auto 0 0; text-align: center; padding: 8px;
-      background: rgba(3, 11, 22, .82); color: white; font-size: .9rem;
-    }
-    .card-content { padding: 18px; }
-    .card h3 { color: var(--accent); margin-bottom: 8px; }
-    .read-more { display: inline-block; margin-top: 10px; color: var(--accent); font-weight: bold; }
-    .subjects { background: var(--panel-dark); }
-    .subjects ul { max-width: 750px; margin: auto; list-style: none; }
-    .subjects li { background: var(--panel); margin: 10px 0; padding: 10px 16px; border-radius: 8px; border-right: 4px solid var(--accent); }
-    .jobs .job { background: var(--panel); padding: 22px 16px; border-radius: 12px; text-align: center; border: 1px solid #17476b; }
-    .job .icon { font-size: 2.4rem; }
-    .job h3 { color: var(--accent); margin: 8px 0; }
-    .conclusion { text-align: center; background: linear-gradient(135deg, #07305a, var(--bg)); }
-    .conclusion h2 { color: var(--accent); margin-bottom: 12px; }
-    footer { text-align: center; padding: 24px; background: #030b16; border-top: 2px solid var(--accent); }
-    footer span { color: var(--accent); }
-    .modal {
-      position: fixed; inset: 0; z-index: 100; display: none; overflow-y: auto;
-      padding: 24px; background: rgba(0,0,0,.78); align-items: center; justify-content: center;
-    }
-    .modal.show { display: flex; }
-    .modal-dialog {
-      width: min(850px, 100%); max-height: 90vh; overflow-y: auto;
-      background: var(--panel-dark); border: 1px solid var(--accent); border-radius: 16px;
-      padding: 24px; box-shadow: 0 10px 40px #0008;
-    }
-    .modal-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
-    .modal-top h2 { color: var(--accent); font-size: 1.5rem; }
-    .close-button { font-size: 1.5rem; background: transparent; border: 1px solid #456; border-radius: 8px; color: white; padding: 2px 12px; cursor: pointer; }
-    .modal-body h3 { color: var(--accent); margin: 18px 0 6px; }
-    .modal-body p { margin-bottom: 10px; }
-    .modal-body ul { padding-right: 24px; }
-    .modal-body li { margin: 5px 0; }
-    .code-example { direction: ltr; text-align: left; white-space: pre-wrap; overflow-wrap: anywhere; background: #030b16; color: #a4f2ff; border-radius: 8px; padding: 16px; margin-top: 8px; }
-    @media (max-width: 600px) {
-      header { justify-content: center; text-align: center; }
-      nav { justify-content: center; }
-      section { padding: 40px 5%; }
-      .hero { min-height: 380px; }
-      .modal { padding: 10px; }
-      .modal-dialog { padding: 16px; max-height: 94vh; }
+    @media(max-width:620px){
+      .nav-wrap{min-height:68px}.brand{font-size:1.05rem}
+      .hero{min-height:490px;padding:65px 5%}
+      section{padding:58px 0}
+      .stats{grid-template-columns:repeat(2,1fr);margin-top:-25px}
+      .fields-grid,.subjects-list,.resources-grid,.jobs-grid,.blog-grid,.roadmap{grid-template-columns:1fr}
+      .field-content p{min-height:0}
+      .nav-actions{gap:5px}.icon-btn{padding:7px 9px;font-size:.85rem}
+      .modal{padding:10px}.modal-box{padding:18px;max-height:93vh}
     }
   </style>
 </head>
-<body>
-  <header>
-    <h2>💻 مهندس المستقبل</h2>
-    <nav aria-label="القائمة الرئيسية">
-      <a href="#home">الرئيسية</a>
-      <a href="#about">عن التخصص</a>
-      <a href="#fields">مجالات التخصص</a>
-      <a href="#subjects">المواد</a>
-      <a href="#jobs">مجالات العمل</a>
-    </nav>
+<body dir="rtl">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" data-ar="💻 مهندس المستقبل" data-en="💻 Future Engineer">💻 مهندس المستقبل</a>
+      <nav class="main-nav" id="mainNav" aria-label="القائمة الرئيسية">
+        <a href="#home" class="active" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+        <a href="#about" data-ar="عن التخصص" data-en="About">عن التخصص</a>
+        <a href="#fields" data-ar="المجالات" data-en="Fields">المجالات</a>
+        <a href="#roadmap" data-ar="خارطة الطريق" data-en="Roadmap">خارطة الطريق</a>
+        <a href="#resources" data-ar="مصادر التعلم" data-en="Resources">مصادر التعلم</a>
+        <a href="#jobs" data-ar="الوظائف" data-en="Careers">الوظائف</a>
+        <a href="#faq" data-ar="الأسئلة" data-en="FAQ">الأسئلة</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="langBtn" type="button" aria-label="Change language">EN</button>
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">☀️</button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+      </div>
+    </div>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div>
-        <h1>هندسة الحاسوب والاتصالات</h1>
-        <p>تخصص يجمع بين عالم الحاسوب والإلكترونيات وشبكات الاتصالات، لبناء مستقبل رقمي متطور.</p>
-        <a href="#about" class="button">اكتشف التخصص 🚀</a>
+      <div class="hero-inner reveal">
+        <span class="eyebrow" data-ar="دليلك إلى عالم التكنولوجيا" data-en="Your guide to the world of technology">دليلك إلى عالم التكنولوجيا</span>
+        <h1 data-ar="هندسة الحاسوب والاتصالات" data-en="Computer & Communications Engineering">هندسة الحاسوب والاتصالات</h1>
+        <p data-ar="من أول سطر برمجي إلى تصميم الأنظمة الذكية وشبكات المستقبل؛ اكتشف تخصصاً يجمع بين الحاسوب والإلكترونيات والاتصالات." data-en="From your first line of code to intelligent systems and future networks: explore a field combining computing, electronics and communications.">من أول سطر برمجي إلى تصميم الأنظمة الذكية وشبكات المستقبل؛ اكتشف تخصصاً يجمع بين الحاسوب والإلكترونيات والاتصالات.</p>
+        <a class="btn" href="#about" data-ar="ابدأ رحلتك الهندسية 🚀" data-en="Start your engineering journey 🚀">ابدأ رحلتك الهندسية 🚀</a>
+        <a class="btn secondary" href="#roadmap" data-ar="شاهد خارطة الطريق" data-en="Explore the roadmap">شاهد خارطة الطريق</a>
       </div>
     </section>
+
+    <div class="container stats reveal">
+      <div class="stat"><strong>6</strong><span data-ar="مجالات تقنية رئيسية" data-en="Core technical fields">مجالات تقنية رئيسية</span></div>
+      <div class="stat"><strong>+20</strong><span data-ar="مادة ومهارة تخصصية" data-en="Subjects and skills">مادة ومهارة تخصصية</span></div>
+      <div class="stat"><strong>4</strong><span data-ar="سنوات في خارطة الطريق" data-en="Years in the roadmap">سنوات في خارطة الطريق</span></div>
+      <div class="stat"><strong>∞</strong><span data-ar="فرص للتعلم والابتكار" data-en="Ways to learn and innovate">فرص للتعلم والابتكار</span></div>
+    </div>
 
     <section id="about">
-      <h2 class="section-title">ما هي هندسة الحاسوب والاتصالات؟</h2>
-      <div class="about">
-        <p>هندسة الحاسوب والاتصالات تخصص هندسي يجمع بين الأجهزة الإلكترونية والبرمجيات وشبكات الحاسوب وأنظمة الاتصالات الحديثة. يدرس الطالب كيفية تصميم الحواسيب وتطوير الأنظمة الإلكترونية وربط الأجهزة لنقل المعلومات بسرعة وكفاءة.</p>
-        <br>
-        <p>يهدف التخصص إلى إعداد مهندسين قادرين على تطوير التكنولوجيا وحل المشكلات التقنية والمساهمة في بناء العالم الرقمي.</p>
+      <div class="container">
+        <div class="section-head reveal"><span class="kicker" data-ar="اكتشف التخصص" data-en="Discover the field">اكتشف التخصص</span><h2 data-ar="ما هي هندسة الحاسوب والاتصالات؟" data-en="What is Computer & Communications Engineering?">ما هي هندسة الحاسوب والاتصالات؟</h2><p data-ar="حلقة الوصل بين الأجهزة والبرمجيات والاتصال الرقمي." data-en="The connection between hardware, software and digital communication.">حلقة الوصل بين الأجهزة والبرمجيات والاتصال الرقمي.</p></div>
+        <div class="about-grid reveal">
+          <div class="about-copy">
+            <p data-ar="هندسة الحاسوب والاتصالات تخصص هندسي يجمع بين الأجهزة الإلكترونية والبرمجيات وشبكات الحاسوب وأنظمة الاتصالات الحديثة. يدرس الطالب كيفية تصميم الحواسيب وتطوير الأنظمة الإلكترونية وربط الأجهزة لنقل المعلومات بسرعة وكفاءة." data-en="Computer and Communications Engineering combines electronic hardware, software, computer networks and modern communication systems. Students learn how computers are designed, electronic systems are developed and devices are connected to transfer information efficiently.">هندسة الحاسوب والاتصالات تخصص هندسي يجمع بين الأجهزة الإلكترونية والبرمجيات وشبكات الحاسوب وأنظمة الاتصالات الحديثة. يدرس الطالب كيفية تصميم الحواسيب وتطوير الأنظمة الإلكترونية وربط الأجهزة لنقل المعلومات بسرعة وكفاءة.</p>
+            <p data-ar="يهدف التخصص إلى إعداد مهندسين قادرين على تطوير التكنولوجيا وحل المشكلات التقنية والمساهمة في بناء العالم الرقمي. ويحتاج النجاح فيه إلى أساس قوي في الرياضيات والبرمجة والتطبيق العملي المستمر." data-en="The field prepares engineers to develop technology, solve technical problems and contribute to the digital world. Success requires a strong foundation in mathematics, programming and continuous hands-on practice.">يهدف التخصص إلى إعداد مهندسين قادرين على تطوير التكنولوجيا وحل المشكلات التقنية والمساهمة في بناء العالم الرقمي. ويحتاج النجاح فيه إلى أساس قوي في الرياضيات والبرمجة والتطبيق العملي المستمر.</p>
+          </div>
+          <div class="about-visual" role="img" aria-label="طلاب هندسة يعملون على الحواسيب"></div>
+        </div>
       </div>
     </section>
 
-    <section id="fields">
-      <h2 class="section-title">أهم مجالات التخصص</h2>
-      <div class="cards">
-        <article class="card">
-          <div class="card-image" role="button" tabindex="0" data-topic="electronics" aria-label="افتح شرح الإلكترونيات">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="لوحة إلكترونية ودوائر متكاملة" loading="lazy">
-            <div class="image-hint">اضغط على الصورة لمعرفة المزيد 🔍</div>
-          </div>
-          <div class="card-content">
-            <h3>🔌 الإلكترونيات</h3>
-            <p>دراسة الدوائر الإلكترونية والمقاومات والمكثفات والترانزستورات وكيفية تصميم الدوائر وتحليلها.</p>
-            <span class="read-more">اقرأ الشرح الكامل ←</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-image" role="button" tabindex="0" data-topic="networks" aria-label="افتح شرح شبكات الحاسوب">
-            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="خوادم الحاسوب ومراكز البيانات" loading="lazy">
-            <div class="image-hint">اضغط على الصورة لمعرفة المزيد 🔍</div>
-          </div>
-          <div class="card-content">
-            <h3>🌐 شبكات الحاسوب</h3>
-            <p>تعلم ربط الأجهزة والإنترنت وأجهزة التوجيه والبروتوكولات المستخدمة لنقل البيانات.</p>
-            <span class="read-more">اقرأ الشرح الكامل ←</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-image" role="button" tabindex="0" data-topic="programming" aria-label="افتح شرح البرمجة">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="مهندسون يعملون على الحواسيب" loading="lazy">
-            <div class="image-hint">اضغط على الصورة لمعرفة المزيد 🔍</div>
-          </div>
-          <div class="card-content">
-            <h3>💻 البرمجة</h3>
-            <p>تعلم كتابة الأكواد وتطوير البرامج والتطبيقات وحل المشكلات وبناء الأنظمة الذكية.</p>
-            <span class="read-more">اقرأ الشرح الكامل ←</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-image" role="button" tabindex="0" data-topic="communications" aria-label="افتح شرح أنظمة الاتصالات">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="العالم الرقمي والاتصالات" loading="lazy">
-            <div class="image-hint">اضغط على الصورة لمعرفة المزيد 🔍</div>
-          </div>
-          <div class="card-content">
-            <h3>📡 أنظمة الاتصالات</h3>
-            <p>دراسة نقل المعلومات عبر الموجات والألياف الضوئية وشبكات الهاتف المحمول.</p>
-            <span class="read-more">اقرأ الشرح الكامل ←</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-image" role="button" tabindex="0" data-topic="security" aria-label="افتح شرح أمن الشبكات">
-            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80" alt="حماية البيانات والأمن الرقمي" loading="lazy">
-            <div class="image-hint">اضغط على الصورة لمعرفة المزيد 🔍</div>
-          </div>
-          <div class="card-content">
-            <h3>🔐 أمن الشبكات</h3>
-            <p>تعلم حماية الشبكات والأنظمة والبيانات وتقليل المخاطر الأمنية.</p>
-            <span class="read-more">اقرأ الشرح الكامل ←</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-image" role="button" tabindex="0" data-topic="embedded" aria-label="افتح شرح الأنظمة المدمجة">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="لوحة إلكترونية ومتحكمات" loading="lazy">
-            <div class="image-hint">اضغط على الصورة لمعرفة المزيد 🔍</div>
-          </div>
-          <div class="card-content">
-            <h3>🤖 الأنظمة المدمجة</h3>
-            <p>التعرف على المتحكمات الدقيقة والحساسات ودمج البرمجة مع الدوائر الإلكترونية.</p>
-            <span class="read-more">اقرأ الشرح الكامل ←</span>
-          </div>
-        </article>
+    <section class="soft-section" id="fields">
+      <div class="container">
+        <div class="section-head reveal"><span class="kicker" data-ar="تعرّف إلى المسارات" data-en="Explore the disciplines">تعرّف إلى المسارات</span><h2 data-ar="أهم مجالات التخصص" data-en="Main fields of study">أهم مجالات التخصص</h2><p data-ar="اضغط على زر التفاصيل داخل كل بطاقة لقراءة شرح المجال وأهم مفاهيمه وأدواته." data-en="Select the details button on any card to learn its concepts and tools.">اضغط على زر التفاصيل داخل كل بطاقة لقراءة شرح المجال وأهم مفاهيمه وأدواته.</p></div>
+        <div class="fields-grid">
+          <article class="field-card reveal"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=850&q=75" alt="لوحة دوائر إلكترونية ومكونات دقيقة" loading="lazy" decoding="async"><div class="field-content"><span class="field-number">01 / ELECTRONICS</span><h3 data-ar="🔌 الإلكترونيات" data-en="🔌 Electronics">🔌 الإلكترونيات</h3><p data-ar="دراسة الدوائر والمقاومات والمكثفات والترانزستورات وتحليل الإشارات وتصميم الدوائر." data-en="Study circuits, resistors, capacitors, transistors, signal analysis and circuit design.">دراسة الدوائر والمقاومات والمكثفات والترانزستورات وتحليل الإشارات وتصميم الدوائر.</p><button data-topic="electronics" data-ar="اكتشف المجال ←" data-en="Explore field →">اكتشف المجال ←</button></div></article>
+          <article class="field-card reveal"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=850&q=75" alt="خوادم وشبكات حاسوب في مركز بيانات" loading="lazy" decoding="async"><div class="field-content"><span class="field-number">02 / NETWORKS</span><h3 data-ar="🌐 شبكات الحاسوب" data-en="🌐 Computer Networks">🌐 شبكات الحاسوب</h3><p data-ar="ربط الأجهزة وإدارة الشبكات وفهم عناوين IP والموجهات والبروتوكولات." data-en="Connect devices, manage networks and understand IP addresses, routers and protocols.">ربط الأجهزة وإدارة الشبكات وفهم عناوين IP والموجهات والبروتوكولات.</p><button data-topic="networks" data-ar="اكتشف المجال ←" data-en="Explore field →">اكتشف المجال ←</button></div></article>
+          <article class="field-card reveal"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=850&q=75" alt="شيفرة برمجية على شاشة حاسوب" loading="lazy" decoding="async"><div class="field-content"><span class="field-number">03 / PROGRAMMING</span><h3 data-ar="💻 البرمجة" data-en="💻 Programming">💻 البرمجة</h3><p data-ar="كتابة الأكواد وتطوير البرامج والتطبيقات وبناء الحلول باستخدام Python وC وغيرها." data-en="Write code and build software and applications using Python, C and other languages.">كتابة الأكواد وتطوير البرامج والتطبيقات وبناء الحلول باستخدام Python وC وغيرها.</p><button data-topic="programming" data-ar="اكتشف المجال ←" data-en="Explore field →">اكتشف المجال ←</button></div></article>
+          <article class="field-card reveal"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=850&q=75" alt="شبكة اتصالات رقمية تربط العالم" loading="lazy" decoding="async"><div class="field-content"><span class="field-number">04 / COMMUNICATIONS</span><h3 data-ar="📡 أنظمة الاتصالات" data-en="📡 Communication Systems">📡 أنظمة الاتصالات</h3><p data-ar="نقل المعلومات عبر الإشارات والموجات والألياف الضوئية وشبكات الهاتف المحمول." data-en="Transmit information through signals, radio waves, optical fibers and mobile networks.">نقل المعلومات عبر الإشارات والموجات والألياف الضوئية وشبكات الهاتف المحمول.</p><button data-topic="communications" data-ar="اكتشف المجال ←" data-en="Explore field →">اكتشف المجال ←</button></div></article>
+          <article class="field-card reveal"><img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=850&q=75" alt="قفل رقمي يرمز إلى حماية المعلومات" loading="lazy" decoding="async"><div class="field-content"><span class="field-number">05 / CYBER SECURITY</span><h3 data-ar="🔐 أمن الشبكات" data-en="🔐 Network Security">🔐 أمن الشبكات</h3><p data-ar="حماية الشبكات والأنظمة والبيانات باستخدام التشفير والجدران النارية وأفضل الممارسات." data-en="Protect networks, systems and data using encryption, firewalls and security practices.">حماية الشبكات والأنظمة والبيانات باستخدام التشفير والجدران النارية وأفضل الممارسات.</p><button data-topic="security" data-ar="اكتشف المجال ←" data-en="Explore field →">اكتشف المجال ←</button></div></article>
+          <article class="field-card reveal"><img src="https://images.unsplash.com/photo-1535378620166-273708d44e4c?auto=format&fit=crop&w=850&q=75" alt="روبوت ومكونات نظام إلكتروني مدمج" loading="lazy" decoding="async"><div class="field-content"><span class="field-number">06 / EMBEDDED SYSTEMS</span><h3 data-ar="🤖 الأنظمة المدمجة" data-en="🤖 Embedded Systems">🤖 الأنظمة المدمجة</h3><p data-ar="دمج البرمجة بالإلكترونيات للتحكم بالحساسات والمحركات والأجهزة الذكية." data-en="Combine programming and electronics to control sensors, motors and smart devices.">دمج البرمجة بالإلكترونيات للتحكم بالحساسات والمحركات والأجهزة الذكية.</p><button data-topic="embedded" data-ar="اكتشف المجال ←" data-en="Explore field →">اكتشف المجال ←</button></div></article>
+        </div>
       </div>
     </section>
 
-    <section class="subjects" id="subjects">
-      <h2 class="section-title">ماذا يدرس طالب التخصص؟</h2>
-      <ul>
-        <li>📐 الرياضيات الهندسية والتفاضل والتكامل.</li>
-        <li>⚡ الفيزياء الكهربائية والمغناطيسية.</li>
-        <li>🔋 أساسيات الدوائر الكهربائية والإلكترونية.</li>
-        <li>💻 البرمجة باستخدام لغات مثل C وPython.</li>
-        <li>🧠 المعالجات الدقيقة والأنظمة المدمجة.</li>
-        <li>🌐 شبكات الحاسوب وبروتوكولات الاتصال.</li>
-        <li>📡 مبادئ أنظمة الاتصالات والإشارات.</li>
-        <li>🔢 المنطق الرقمي وتصميم الدوائر الرقمية.</li>
-      </ul>
-      <p style="text-align:center; margin-top:20px;">تختلف المواد والخطة الدراسية حسب الجامعة.</p>
-    </section>
-
-    <section id="jobs">
-      <h2 class="section-title">مجالات العمل بعد التخرج</h2>
-      <div class="jobs">
-        <article class="job"><div class="icon">🌐</div><h3>مهندس شبكات</h3><p>تصميم الشبكات وإدارتها وصيانتها وتحسين أدائها.</p></article>
-        <article class="job"><div class="icon">📡</div><h3>مهندس اتصالات</h3><p>العمل على أنظمة الاتصالات والشبكات اللاسلكية.</p></article>
-        <article class="job"><div class="icon">💻</div><h3>مطور برمجيات</h3><p>تطوير البرامج والتطبيقات وحلول البرمجيات.</p></article>
-        <article class="job"><div class="icon">🔧</div><h3>مهندس أنظمة مدمجة</h3><p>تصميم الأنظمة التي تجمع بين الأجهزة والبرمجيات.</p></article>
-        <article class="job"><div class="icon">🔐</div><h3>أمن الشبكات</h3><p>المساهمة في حماية الشبكات والأنظمة والبيانات.</p></article>
-        <article class="job"><div class="icon">🤖</div><h3>الأنظمة الذكية</h3><p>تطوير حلول تعتمد على الذكاء الاصطناعي والأجهزة الذكية.</p></article>
+    <section id="subjects">
+      <div class="container">
+        <div class="section-head reveal"><span class="kicker" data-ar="الحياة الجامعية" data-en="University studies">الحياة الجامعية</span><h2 data-ar="ماذا يدرس طالب التخصص؟" data-en="What do students study?">ماذا يدرس طالب التخصص؟</h2><p data-ar="أمثلة على المواد الشائعة، وقد تختلف الخطة حسب الجامعة." data-en="Examples of common subjects; the curriculum varies by university.">أمثلة على المواد الشائعة، وقد تختلف الخطة حسب الجامعة.</p></div>
+        <ul class="subjects-list reveal">
+          <li data-ar="الرياضيات الهندسية والتفاضل والتكامل" data-en="Engineering Mathematics and Calculus">الرياضيات الهندسية والتفاضل والتكامل</li>
+          <li data-ar="الفيزياء الكهربائية والمغناطيسية" data-en="Electricity and Magnetism">الفيزياء الكهربائية والمغناطيسية</li>
+          <li data-ar="الدوائر الكهربائية والإلكترونية" data-en="Electrical and Electronic Circuits">الدوائر الكهربائية والإلكترونية</li>
+          <li data-ar="البرمجة باستخدام C وPython" data-en="Programming with C and Python">البرمجة باستخدام C وPython</li>
+          <li data-ar="المنطق الرقمي وتصميم الدوائر الرقمية" data-en="Digital Logic and Digital Design">المنطق الرقمي وتصميم الدوائر الرقمية</li>
+          <li data-ar="المعالجات الدقيقة والأنظمة المدمجة" data-en="Microprocessors and Embedded Systems">المعالجات الدقيقة والأنظمة المدمجة</li>
+          <li data-ar="شبكات الحاسوب وبروتوكولات الاتصال" data-en="Computer Networks and Protocols">شبكات الحاسوب وبروتوكولات الاتصال</li>
+          <li data-ar="الإشارات وأنظمة الاتصالات" data-en="Signals and Communication Systems">الإشارات وأنظمة الاتصالات</li>
+        </ul>
+        <p class="note reveal" data-ar="نصيحة: لا تكتفِ بحفظ النظريات؛ طبّق ما تتعلمه بمشاريع صغيرة ومحاكاة الدوائر والشبكات." data-en="Tip: Don't only memorize theory. Apply what you learn through small projects and circuit and network simulations.">نصيحة: لا تكتفِ بحفظ النظريات؛ طبّق ما تتعلمه بمشاريع صغيرة ومحاكاة الدوائر والشبكات.</p>
       </div>
     </section>
 
-    <section class="conclusion">
-      <h2>مستقبل التكنولوجيا يبدأ من هنا 🚀</h2>
-      <p>هندسة الحاسوب والاتصالات فرصة للتعلم والإبداع وبناء حلول تقنية تساعد على تطوير المجتمع.</p>
-      <br>
-      <p><strong>تعلّم اليوم، وابتكر غدًا، وكن مهندس المستقبل!</strong></p>
-      <p>كل خطأ برمجي أو عقبة تواجهها الآن هي خطوة تقربك من إتقان الحل الهندسي الأفضل.</p>
+    <section class="soft-section" id="roadmap">
+      <div class="container">
+        <div class="section-head reveal"><span class="kicker" data-ar="خطتك من البداية إلى التخرج" data-en="Your path to graduation">خطتك من البداية إلى التخرج</span><h2 data-ar="خارطة الطريق: أربع سنوات" data-en="Four-year learning roadmap">خارطة الطريق: أربع سنوات</h2><p data-ar="خارطة إرشادية عامة؛ راجع الخطة الرسمية في جامعتك لتحديد ترتيب المواد والمتطلبات." data-en="A general guide. Check your university's official curriculum for course order and prerequisites.">خارطة إرشادية عامة؛ راجع الخطة الرسمية في جامعتك لتحديد ترتيب المواد والمتطلبات.</p></div>
+        <div class="roadmap">
+          <article class="year-card reveal" data-year="1"><h3 data-ar="السنة الأولى | الأساس" data-en="Year 1 | Foundations">السنة الأولى | الأساس</h3><p data-ar="ابنِ قاعدة قوية في الرياضيات والعلوم ومهارات الحاسوب." data-en="Build a strong base in mathematics, science and computing.">ابنِ قاعدة قوية في الرياضيات والعلوم ومهارات الحاسوب.</p><ul><li data-ar="تفاضل وتكامل وفيزياء" data-en="Calculus and Physics">تفاضل وتكامل وفيزياء</li><li data-ar="مقدمة في البرمجة C أو Python" data-en="Intro to C or Python">مقدمة في البرمجة C أو Python</li><li data-ar="أساسيات الحاسوب واللغة الإنجليزية" data-en="Computer basics and English">أساسيات الحاسوب واللغة الإنجليزية</li><li data-ar="مشروع: برامج بسيطة" data-en="Project: simple programs">مشروع: برامج بسيطة</li></ul></article>
+          <article class="year-card reveal" data-year="2"><h3 data-ar="السنة الثانية | التعمق" data-en="Year 2 | Core skills">السنة الثانية | التعمق</h3><p data-ar="ابدأ بفهم مكونات الحاسوب والدوائر والمنطق الرقمي." data-en="Understand computer components, circuits and digital logic.">ابدأ بفهم مكونات الحاسوب والدوائر والمنطق الرقمي.</p><ul><li data-ar="دوائر كهربائية وإلكترونيات" data-en="Circuits and Electronics">دوائر كهربائية وإلكترونيات</li><li data-ar="منطق رقمي وهياكل بيانات" data-en="Digital Logic and Data Structures">منطق رقمي وهياكل بيانات</li><li data-ar="معمارية الحاسوب" data-en="Computer Architecture">معمارية الحاسوب</li><li data-ar="مشروع: دائرة إلكترونية" data-en="Project: electronic circuit">مشروع: دائرة إلكترونية</li></ul></article>
+          <article class="year-card reveal" data-year="3"><h3 data-ar="السنة الثالثة | التخصص" data-en="Year 3 | Specialization">السنة الثالثة | التخصص</h3><p data-ar="وسّع خبرتك في الشبكات والاتصالات والأنظمة المدمجة." data-en="Expand your skills in networks, communications and embedded systems.">وسّع خبرتك في الشبكات والاتصالات والأنظمة المدمجة.</p><ul><li data-ar="شبكات الحاسوب وأنظمة التشغيل" data-en="Computer Networks and Operating Systems">شبكات الحاسوب وأنظمة التشغيل</li><li data-ar="إشارات واتصالات" data-en="Signals and Communications">إشارات واتصالات</li><li data-ar="متحكمات دقيقة وأنظمة مدمجة" data-en="Microcontrollers and Embedded Systems">متحكمات دقيقة وأنظمة مدمجة</li><li data-ar="مشروع: نظام ذكي بسيط" data-en="Project: simple smart system">مشروع: نظام ذكي بسيط</li></ul></article>
+          <article class="year-card reveal" data-year="4"><h3 data-ar="السنة الرابعة | الاحتراف" data-en="Year 4 | Professional growth">السنة الرابعة | الاحتراف</h3><p data-ar="اختر مسارك، وطبّق معرفتك في مشروع تخرج وتدريب عملي." data-en="Choose a path and apply your knowledge in a capstone and internship.">اختر مسارك، وطبّق معرفتك في مشروع تخرج وتدريب عملي.</p><ul><li data-ar="مواد تخصصية ومشاريع متقدمة" data-en="Advanced electives and projects">مواد تخصصية ومشاريع متقدمة</li><li data-ar="تدريب ميداني وسيرة ذاتية" data-en="Internship and CV">تدريب ميداني وسيرة ذاتية</li><li data-ar="مشروع تخرج متكامل" data-en="Capstone project">مشروع تخرج متكامل</li><li data-ar="ملف أعمال ومقابلات" data-en="Portfolio and interviews">ملف أعمال ومقابلات</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <div class="container">
+        <div class="section-head reveal"><span class="kicker" data-ar="تعلم من أي مكان" data-en="Learn from anywhere">تعلم من أي مكان</span><h2 data-ar="مصادر تعلم مجانية ومفيدة" data-en="Free learning resources">مصادر تعلم مجانية ومفيدة</h2><p data-ar="روابط تساعدك على بناء مهاراتك خارج المحاضرات. بعض المنصات تقدم محتوى مجانياً مع خيارات مدفوعة للشهادات." data-en="Resources to build skills beyond lectures. Some platforms offer free learning with paid certificate options.">روابط تساعدك على بناء مهاراتك خارج المحاضرات. بعض المنصات تقدم محتوى مجانياً مع خيارات مدفوعة للشهادات.</p></div>
+        <div class="resources-grid">
+          <article class="resource reveal"><div class="emoji">🎓</div><h3>CS50 – Harvard</h3><p data-ar="مدخل ممتاز إلى علوم الحاسوب والتفكير البرمجي وحل المشكلات." data-en="An excellent introduction to computer science, programming and problem solving.">مدخل ممتاز إلى علوم الحاسوب والتفكير البرمجي وحل المشكلات.</p><a href="https://cs50.harvard.edu/x/" target="_blank" rel="noopener">افتح الدورة ↗</a></article>
+          <article class="resource reveal"><div class="emoji">📚</div><h3>Coursera</h3><p data-ar="دورات في البرمجة والشبكات والذكاء الاصطناعي؛ تتوفر دورات بخيارات تعلم مجانية حسب الدورة." data-en="Courses in programming, networks and AI; free learning options depend on the course.">دورات في البرمجة والشبكات والذكاء الاصطناعي؛ تتوفر دورات بخيارات تعلم مجانية حسب الدورة.</p><a href="https://www.coursera.org/" target="_blank" rel="noopener">استكشف الدورات ↗</a></article>
+          <article class="resource reveal"><div class="emoji">▶️</div><h3 data-ar="قنوات يوتيوب" data-en="YouTube learning">قنوات يوتيوب</h3><p data-ar="ابحث عن شروحات عملية في الإلكترونيات والبرمجة والشبكات باللغة التي تناسبك." data-en="Find practical tutorials in electronics, programming and networking.">ابحث عن شروحات عملية في الإلكترونيات والبرمجة والشبكات باللغة التي تناسبك.</p><a href="https://www.youtube.com/" target="_blank" rel="noopener">اذهب إلى يوتيوب ↗</a></article>
+          <article class="resource reveal"><div class="emoji">🧪</div><h3>Tinkercad Circuits</h3><p data-ar="محاكاة الدوائر الإلكترونية وتجربة المكونات قبل تنفيذها عملياً." data-en="Simulate electronic circuits and test components virtually.">محاكاة الدوائر الإلكترونية وتجربة المكونات قبل تنفيذها عملياً.</p><a href="https://www.tinkercad.com/" target="_blank" rel="noopener">جرّب Tinkercad ↗</a></article>
+          <article class="resource reveal"><div class="emoji">🌐</div><h3>Cisco Networking Academy</h3><p data-ar="مواد تعليمية ومقدمة في الشبكات والأمن السيبراني ومجالات تقنية أخرى." data-en="Learning materials in networking, cybersecurity and other technology fields.">مواد تعليمية ومقدمة في الشبكات والأمن السيبراني ومجالات تقنية أخرى.</p><a href="https://www.netacad.com/" target="_blank" rel="noopener">استكشف NetAcad ↗</a></article>
+          <article class="resource reveal"><div class="emoji">🐍</div><h3>freeCodeCamp</h3><p data-ar="تعلم البرمجة وتطوير الويب من خلال دروس ومشاريع تطبيقية." data-en="Learn programming and web development through lessons and hands-on projects.">تعلم البرمجة وتطوير الويب من خلال دروس ومشاريع تطبيقية.</p><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">ابدأ التعلم ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section" id="jobs">
+      <div class="container">
+        <div class="section-head reveal"><span class="kicker" data-ar="مستقبلك المهني" data-en="Your career">مستقبلك المهني</span><h2 data-ar="مجالات العمل بعد التخرج" data-en="Career opportunities">مجالات العمل بعد التخرج</h2><p data-ar="تتوسع فرصك كلما جمعت بين المعرفة الأكاديمية والمشاريع والخبرة العملية." data-en="Career options grow when you combine academic knowledge with projects and practical experience.">تتوسع فرصك كلما جمعت بين المعرفة الأكاديمية والمشاريع والخبرة العملية.</p></div>
+        <div class="jobs-grid">
+          <article class="job reveal"><div class="emoji">🌐</div><h3 data-ar="مهندس شبكات" data-en="Network Engineer">مهندس شبكات</h3><p data-ar="تصميم الشبكات وإدارتها وصيانتها وتحسين أدائها." data-en="Design, manage, maintain and optimize networks.">تصميم الشبكات وإدارتها وصيانتها وتحسين أدائها.</p></article>
+          <article class="job reveal"><div class="emoji">📡</div><h3 data-ar="مهندس اتصالات" data-en="Communications Engineer">مهندس اتصالات</h3><p data-ar="العمل على أنظمة الاتصالات والشبكات اللاسلكية." data-en="Work with communication systems and wireless networks.">العمل على أنظمة الاتصالات والشبكات اللاسلكية.</p></article>
+          <article class="job reveal"><div class="emoji">💻</div><h3 data-ar="مطور برمجيات" data-en="Software Developer">مطور برمجيات</h3><p data-ar="تطوير البرامج والتطبيقات والحلول البرمجية." data-en="Develop software, applications and digital solutions.">تطوير البرامج والتطبيقات والحلول البرمجية.</p></article>
+          <article class="job reveal"><div class="emoji">🔧</div><h3 data-ar="مهندس أنظمة مدمجة" data-en="Embedded Systems Engineer">مهندس أنظمة مدمجة</h3><p data-ar="تصميم الأنظمة التي تجمع بين الأجهزة والبرمجيات." data-en="Build systems combining hardware and software.">تصميم الأنظمة التي تجمع بين الأجهزة والبرمجيات.</p></article>
+          <article class="job reveal"><div class="emoji">🔐</div><h3 data-ar="مختص أمن سيبراني" data-en="Cybersecurity Specialist">مختص أمن سيبراني</h3><p data-ar="المساهمة في حماية الشبكات والأنظمة والبيانات." data-en="Help protect networks, systems and data.">المساهمة في حماية الشبكات والأنظمة والبيانات.</p></article>
+          <article class="job reveal"><div class="emoji">🤖</div><h3 data-ar="مهندس إنترنت الأشياء" data-en="IoT Engineer">مهندس إنترنت الأشياء</h3><p data-ar="تطوير أجهزة ذكية متصلة بالحساسات والشبكات." data-en="Develop smart connected devices using sensors and networks.">تطوير أجهزة ذكية متصلة بالحساسات والشبكات.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <div class="container">
+        <div class="section-head reveal"><span class="kicker" data-ar="معرفة قصيرة ومستمرة" data-en="Short and useful reads">معرفة قصيرة ومستمرة</span><h2 data-ar="من المدونة التعليمية" data-en="From the learning blog">من المدونة التعليمية</h2><p data-ar="مقالات مختصرة تساعدك على فهم مفاهيم أساسية في التخصص." data-en="Short articles to help you understand core concepts.">مقالات مختصرة تساعدك على فهم مفاهيم أساسية في التخصص.</p></div>
+        <div class="blog-grid">
+          <article class="blog-card reveal"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=75" alt="مكونات لوحة إلكترونية" loading="lazy"><div class="blog-copy"><h3 data-ar="ما الفرق بين الجهد والتيار؟" data-en="Voltage vs. current">ما الفرق بين الجهد والتيار؟</h3><p data-ar="الجهد هو فرق الطاقة الكهربائية بين نقطتين، أما التيار فهو معدل تدفق الشحنة الكهربائية." data-en="Voltage is the electrical potential difference between two points; current is the rate of charge flow.">الجهد هو فرق الطاقة الكهربائية بين نقطتين، أما التيار فهو معدل تدفق الشحنة الكهربائية.</p><button data-article="voltage" data-ar="اقرأ المزيد ←" data-en="Read more →">اقرأ المزيد ←</button></div></article>
+          <article class="blog-card reveal"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=700&q=75" alt="خوادم مركز بيانات" loading="lazy"><div class="blog-copy"><h3 data-ar="كيف تعمل شبكات الحاسوب؟" data-en="How do computer networks work?">كيف تعمل شبكات الحاسوب؟</h3><p data-ar="تتبادل الأجهزة البيانات وفق قواعد وبروتوكولات تنظّم إرسال المعلومات واستقبالها." data-en="Devices exchange data using protocols that organize how information is sent and received.">تتبادل الأجهزة البيانات وفق قواعد وبروتوكولات تنظّم إرسال المعلومات واستقبالها.</p><button data-article="networks" data-ar="اقرأ المزيد ←" data-en="Read more →">اقرأ المزيد ←</button></div></article>
+          <article class="blog-card reveal"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=700&q=75" alt="شيفرة برمجية على شاشة" loading="lazy"><div class="blog-copy"><h3 data-ar="لماذا تتعلم لغة C؟" data-en="Why learn C?">لماذا تتعلم لغة C؟</h3><p data-ar="تساعدك لغة C على فهم الذاكرة وطريقة عمل البرامج والتعامل مع العتاد." data-en="C helps you understand memory, how programs work and low-level hardware interaction.">تساعدك لغة C على فهم الذاكرة وطريقة عمل البرامج والتعامل مع العتاد.</p><button data-article="c" data-ar="اقرأ المزيد ←" data-en="Read more →">اقرأ المزيد ←</button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section" id="faq">
+      <div class="container">
+        <div class="section-head reveal"><span class="kicker" data-ar="إجابات سريعة" data-en="Quick answers">إجابات سريعة</span><h2 data-ar="الأسئلة الشائعة عن التخصص" data-en="Frequently asked questions">الأسئلة الشائعة عن التخصص</h2></div>
+        <div class="faq-list reveal">
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span data-ar="هل التخصص يحتاج إلى برمجة؟" data-en="Does this major require programming?">هل التخصص يحتاج إلى برمجة؟</span><span>＋</span></button><div class="faq-answer" data-ar="نعم، البرمجة جزء مهم من التخصص، إلى جانب الإلكترونيات والشبكات والاتصالات. ابدأ بلغة واحدة مثل C أو Python ثم توسع تدريجياً." data-en="Yes. Programming is an important part of the major, alongside electronics, networks and communications. Start with C or Python and expand gradually.">نعم، البرمجة جزء مهم من التخصص، إلى جانب الإلكترونيات والشبكات والاتصالات. ابدأ بلغة واحدة مثل C أو Python ثم توسع تدريجياً.</div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span data-ar="هل أحتاج إلى جهاز حاسوب قوي؟" data-en="Do I need a powerful computer?">هل أحتاج إلى جهاز حاسوب قوي؟</span><span>＋</span></button><div class="faq-answer" data-ar="للبداية والتعلم والبرمجة والمحاكاة الخفيفة يكفي غالباً حاسوب متوسط. قد تحتاج مواصفات أعلى لبعض برامج التصميم والمحاكاة المتقدمة." data-en="A mid-range computer is usually enough for learning, coding and light simulation. Advanced design and simulation tools may require stronger hardware.">للبداية والتعلم والبرمجة والمحاكاة الخفيفة يكفي غالباً حاسوب متوسط. قد تحتاج مواصفات أعلى لبعض برامج التصميم والمحاكاة المتقدمة.</div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span data-ar="هل يمكنني التعلم من الإنترنت مجاناً؟" data-en="Can I learn online for free?">هل يمكنني التعلم من الإنترنت مجاناً؟</span><span>＋</span></button><div class="faq-answer" data-ar="بالتأكيد. توجد دورات ومراجع ومختبرات محاكاة مجانية كثيرة. المهم اختيار مسار واضح والتطبيق العملي باستمرار." data-en="Absolutely. There are many free courses, references and simulation labs. Choose a clear path and practice consistently.">بالتأكيد. توجد دورات ومراجع ومختبرات محاكاة مجانية كثيرة. المهم اختيار مسار واضح والتطبيق العملي باستمرار.</div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span data-ar="هل تختلف المواد بين الجامعات؟" data-en="Do courses vary between universities?">هل تختلف المواد بين الجامعات؟</span><span>＋</span></button><div class="faq-answer" data-ar="نعم، قد تختلف أسماء المواد وترتيبها والتخصصات الاختيارية من جامعة إلى أخرى؛ لذلك اعتمد الخطة الدراسية الرسمية لجامعتك." data-en="Yes. Course names, order and electives vary. Always refer to your university's official study plan.">نعم، قد تختلف أسماء المواد وترتيبها والتخصصات الاختيارية من جامعة إلى أخرى؛ لذلك اعتمد الخطة الدراسية الرسمية لجامعتك.</div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span data-ar="كيف أبني خبرة قبل التخرج؟" data-en="How can I gain experience before graduation?">كيف أبني خبرة قبل التخرج؟</span><span>＋</span></button><div class="faq-answer" data-ar="نفّذ مشاريع صغيرة، وثّقها على GitHub، شارك في مسابقات أو نوادٍ طلابية، وتدرّب على أدوات المجال الذي ترغب في التخصص فيه." data-en="Build small projects, document them on GitHub, join competitions or student clubs, and practice tools used in your chosen field.">نفّذ مشاريع صغيرة، وثّقها على GitHub، شارك في مسابقات أو نوادٍ طلابية، وتدرّب على أدوات المجال الذي ترغب في التخصص فيه.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container"><div class="cta reveal"><h2 data-ar="مستقبل التكنولوجيا يبدأ بخطوة منك 🚀" data-en="The future of technology starts with you 🚀">مستقبل التكنولوجيا يبدأ بخطوة منك 🚀</h2><p data-ar="تعلّم اليوم، وطبّق ما تعلمته، واصنع مشاريع تفتخر بها. كل تجربة تقرّبك من أن تصبح مهندساً مبدعاً." data-en="Learn today, put your knowledge into practice and build projects you are proud of. Every experiment brings you closer to becoming an innovative engineer.">تعلّم اليوم، وطبّق ما تعلمته، واصنع مشاريع تفتخر بها. كل تجربة تقرّبك من أن تصبح مهندساً مبدعاً.</p><a class="btn" href="#roadmap" data-ar="خطط لرحلتك الآن" data-en="Plan your journey">خطط لرحلتك الآن</a></div></div>
     </section>
   </main>
 
-  <footer>
-    <p>صُمّم بواسطة <span>المهندس أحمد شادي الطيبي</span> 💙</p>
-    <p>جميع الحقوق محفوظة © 2026</p>
-  </footer>
+  <footer><div class="container"><p data-ar="صُمّم بواسطة <strong>المهندس أحمد شادي الطيبي</strong> 💙" data-en="Designed by <strong>Engineer Ahmed Shady Al-Tibi</strong> 💙">صُمّم بواسطة <strong>المهندس أحمد شادي الطيبي</strong> 💙</p><p>© <span id="year"></span> <span data-ar="جميع الحقوق محفوظة" data-en="All rights reserved">جميع الحقوق محفوظة</span></p></div></footer>
 
-  <div class="modal" id="detailModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-dialog">
-      <div class="modal-top">
-        <h2 id="modalTitle">شرح المجال</h2>
-        <button type="button" class="close-button" id="closeModal" aria-label="إغلاق نافذة الشرح">×</button>
-      </div>
-      <div class="modal-body" id="modalBody"></div>
-    </div>
+  <button class="to-top" id="toTop" aria-label="العودة إلى الأعلى">↑</button>
+
+  <div class="modal" id="detailModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+    <div class="modal-box"><div class="modal-head"><h2 id="modalTitle">شرح المجال</h2><button class="close" id="closeModal" aria-label="إغلاق">×</button></div><div class="modal-body" id="modalBody"></div></div>
   </div>
 
   <script>
     "use strict";
-
     const topics = {
-      electronics: {
-        title: "🔌 الإلكترونيات",
-        intro: "الإلكترونيات تدرس سلوك التيار والجهد والمكونات التي تتحكم في الإشارات الكهربائية، وتُستخدم في الحواسيب والهواتف وأجهزة التحكم.",
-        basics: [
-          "المقاومة: تحد من التيار وتسبب هبوطًا في الجهد.",
-          "المكثف: يخزن الشحنة الكهربائية ويستخدم في الترشيح والتوقيت.",
-          "الدايود: يسمح بمرور التيار في اتجاه معين ضمن ظروف تشغيل مناسبة.",
-          "الترانزستور: يستخدم للتبديل الإلكتروني أو تضخيم الإشارات.",
-          "قانون أوم: الجهد = التيار × المقاومة (V = I × R)."
-        ],
-        importance: "فهم الإلكترونيات يساعد المهندس على تحليل الدوائر وتصميمها واكتشاف الأعطال بأمان.",
-        exampleTitle: "مثال: دائرة LED",
-        example: "مصدر الجهد (+) → مقاومة مناسبة → LED → مصدر الجهد (−). اختر قيمة المقاومة حسب جهد المصدر ومواصفات LED.",
-        note: "افصل الطاقة قبل تغيير التوصيلات، ولا توصل LED مباشرة بمصدر جهد دون مقاومة مناسبة.",
-        tools: ["Tinkercad Circuits لمحاكاة الدوائر.", "Multimeter لقياس الجهد والتيار والمقاومة.", "لوحة تجارب ومكونات إلكترونية مناسبة."]
-      },
-      networks: {
-        title: "🌐 شبكات الحاسوب",
-        intro: "شبكات الحاسوب تربط الأجهزة لتبادل البيانات والموارد، محليًا أو عبر الإنترنت.",
-        basics: [
-          "Router: يوجّه البيانات بين الشبكات.",
-          "Switch: يربط الأجهزة داخل الشبكة المحلية.",
-          "IP Address: عنوان منطقي للجهاز على الشبكة.",
-          "DNS: يحوّل أسماء النطاقات إلى عناوين IP.",
-          "TCP وUDP: بروتوكولان لنقل البيانات بخصائص مختلفة.",
-          "LAN وWAN: شبكات محلية وشبكات واسعة."
-        ],
-        importance: "تساعد معرفة الشبكات على إعداد الاتصال وتشخيص الأعطال وتحسين الأداء.",
-        exampleTitle: "مثال: فتح موقع ويب",
-        example: "كتابة اسم الموقع → البحث عن عنوانه عبر DNS → إنشاء الاتصال → إرسال طلب HTTP/HTTPS → استلام الصفحة.",
-        note: "لا تشارك كلمات مرور الراوتر أو بيانات الدخول، واستخدم إعدادات أمان مناسبة.",
-        tools: ["Cisco Packet Tracer للتدرب على تصميم الشبكات.", "Wireshark لفهم حركة البيانات.", "أوامر ping وipconfig أو ip لفحص الاتصال."]
-      },
-      programming: {
-        title: "💻 البرمجة وتطوير البرمجيات",
-        intro: "البرمجة هي كتابة تعليمات للحاسوب لتنفيذ مهام محددة، وتستخدم في تطوير المواقع والتطبيقات والأنظمة الذكية.",
-        basics: [
-          "المتغيرات: تخزين القيم والبيانات.",
-          "الشروط: اتخاذ القرارات في البرنامج.",
-          "الحلقات: تكرار مجموعة من الأوامر.",
-          "الدوال: تنظيم الكود وإعادة استخدامه."
-        ],
-        importance: "تساعد البرمجة مهندس الحاسوب على تطوير البرامج والتحكم بالأجهزة وحل المشكلات التقنية.",
-        exampleTitle: "مثال بلغة Python",
-        example: 'name = "Ahmed"\nvoltage = 5\n\nprint("Hello", name)\nprint("Voltage =", voltage, "V")',
-        note: "هذا مثال بسيط على المتغيرات وطباعة المعلومات باستخدام لغة Python.",
-        tools: ["Python لتعلم البرمجة.", "لغة C لفهم البرمجة القريبة من الأجهزة.", "Visual Studio Code لكتابة الأكواد.", "Git لحفظ التغييرات في المشاريع."]
-      },
-      communications: {
-        title: "📡 هندسة الاتصالات",
-        intro: "هندسة الاتصالات تهتم بنقل المعلومات بين المرسل والمستقبل باستخدام الإشارات الكهربائية والموجات الكهرومغناطيسية والألياف الضوئية.",
-        basics: [
-          "المرسل: يحول المعلومات إلى إشارة مناسبة للإرسال.",
-          "المستقبل: يستقبل الإشارة ويستخرج المعلومات منها.",
-          "الإشارة: تمثل المعلومات المراد نقلها.",
-          "التردد: عدد دورات الموجة في الثانية ويقاس بالهرتز.",
-          "التضمين: تغيير خاصية في الموجة الحاملة لنقل المعلومات.",
-          "الألياف الضوئية: تنقل البيانات باستخدام الضوء.",
-          "الضوضاء: إشارات غير مرغوبة قد تؤثر في جودة الاتصال."
-        ],
-        importance: "تعتمد الهواتف المحمولة والإنترنت اللاسلكي والبث والأقمار الصناعية على أنظمة الاتصالات.",
-        exampleTitle: "مثال: كيف تصل المكالمة؟",
-        example: "صوت المتحدث → تحويل الصوت إلى بيانات → إرسال البيانات عبر الشبكة → استقبال البيانات في الهاتف الآخر → إعادة إنتاج الصوت.",
-        note: "قد تتأثر الإشارة بالمسافة والعوائق والتداخل؛ لذلك يدرس المهندس طرق تحسين جودة الاتصال.",
-        tools: ["MATLAB أو GNU Octave لدراسة الإشارات.", "التدرب على مفاهيم التردد والتضمين.", "تعلم أساسيات Wi-Fi و5G.", "دراسة الألياف الضوئية."]
-      },
-      security: {
-        title: "🔐 أمن الشبكات والأمن السيبراني",
-        intro: "أمن الشبكات يهتم بحماية الحواسيب والخوادم وأجهزة الشبكة والبيانات من الوصول غير المصرح به، مع الحفاظ على السرية والسلامة والتوافر.",
-        basics: [
-          "الجدار الناري: يطبق قواعد للتحكم في حركة الشبكة.",
-          "التشفير: يحمي البيانات من القراءة غير المصرح بها.",
-          "التحقق من الهوية: يساعد على التأكد من هوية المستخدم.",
-          "المصادقة متعددة العوامل: تضيف خطوة تحقق إضافية.",
-          "النسخ الاحتياطي: يساعد على استعادة البيانات.",
-          "التحديثات: تعالج ثغرات ومشكلات أمنية.",
-          "مبدأ أقل صلاحية: يمنح كل مستخدم الصلاحيات التي يحتاجها فقط."
-        ],
-        importance: "تستخدم المؤسسات أمن الشبكات لحماية الحسابات والملفات والخوادم وتقليل المخاطر الأمنية.",
-        exampleTitle: "مثال: حماية شبكة منزلية",
-        example: "1. غيّر كلمة المرور الافتراضية للراوتر.\n2. استخدم كلمة مرور قوية وفريدة.\n3. فعّل WPA2 أو WPA3 إذا كان جهازك يدعمه.\n4. حدّث برنامج الراوتر.\n5. راجع الأجهزة المتصلة.",
-        note: "تدرّب فقط على أنظمة تملكها أو لديك تصريح واضح لاختبارها.",
-        tools: ["Wireshark لفهم حركة الشبكة.", "Linux لتعلم أساسيات أنظمة التشغيل.", "تعلم TCP/IP وDNS وHTTPS.", "مختبرات تدريبية قانونية للأمن السيبراني."]
-      },
-      embedded: {
-        title: "🤖 الأنظمة المدمجة والمتحكمات الدقيقة",
-        intro: "الأنظمة المدمجة هي أنظمة حاسوبية تؤدي وظائف محددة داخل أجهزة مثل الروبوتات والسيارات والأجهزة المنزلية. وهي تجمع بين الإلكترونيات والبرمجة والتحكم.",
-        basics: [
-          "المتحكم الدقيق: شريحة تنفذ برنامجًا للتحكم بالجهاز.",
-          "الحساس: يقيس متغيرًا مثل الحرارة أو الضوء أو المسافة.",
-          "المشغل: ينفذ فعلًا مثل تشغيل محرك أو إضاءة LED.",
-          "GPIO: منافذ لقراءة الإشارات والتحكم بالمخارج.",
-          "Firmware: برنامج يعمل داخل الجهاز المدمج.",
-          "Arduino: منصة تعليمية مناسبة للمشاريع الإلكترونية.",
-          "ESP32: متحكم يوفر إمكانات اتصال لاسلكي في إصدارات عديدة."
-        ],
-        importance: "تستخدم الأنظمة المدمجة في الأجهزة الذكية والتحكم الصناعي والروبوتات والسيارات.",
-        exampleTitle: "مثال: مصباح يعمل عند انخفاض الإضاءة",
-        example: "حساس الضوء → قراءة مستوى الإضاءة → المتحكم الدقيق يقارن القراءة بحد محدد → تشغيل LED أو إطفاؤه.",
-        note: "يحتاج المشروع الفعلي إلى متحكم وحساس ضوء وLED ومقاومة مناسبة. اختبر الدائرة بجهد منخفض مناسب للمكونات.",
-        tools: ["Arduino IDE لكتابة برامج المتحكمات.", "Tinkercad Circuits لمحاكاة بعض المشاريع.", "لوحة تجارب وحساسات مناسبة.", "تعلم أساسيات C أو C++."]
-      }
+      electronics:{title:"🔌 الإلكترونيات",intro:"تدرس الإلكترونيات سلوك التيار والجهد والمكونات التي تتحكم في الإشارات الكهربائية، وتدخل في الحواسيب والهواتف وأجهزة التحكم.",basics:["المقاومة: تحد من التيار وتسبب هبوطاً في الجهد.","المكثف: يخزن الشحنة ويستخدم في الترشيح والتوقيت.","الدايود: يسمح بمرور التيار في اتجاه معين ضمن ظروف التشغيل المناسبة.","الترانزستور: يستخدم للتبديل الإلكتروني أو تضخيم الإشارات.","قانون أوم: الجهد = التيار × المقاومة (V = I × R)."],example:"مصدر الجهد (+) ← مقاومة مناسبة ← LED ← مصدر الجهد (−). اختر قيمة المقاومة وفق جهد المصدر ومواصفات LED.",tools:["Tinkercad Circuits لمحاكاة الدوائر.","Multimeter لقياس الجهد والتيار والمقاومة.","لوحة تجارب ومكونات إلكترونية مناسبة."]},
+      networks:{title:"🌐 شبكات الحاسوب",intro:"تربط شبكات الحاسوب الأجهزة لتبادل البيانات والموارد محلياً أو عبر الإنترنت.",basics:["Router: يوجّه البيانات بين الشبكات.","Switch: يربط الأجهزة داخل الشبكة المحلية.","IP Address: عنوان منطقي للجهاز على الشبكة.","DNS: يحوّل أسماء النطاقات إلى عناوين IP.","TCP وUDP: بروتوكولان لنقل البيانات بخصائص مختلفة.","LAN وWAN: شبكات محلية وشبكات واسعة."],example:"كتابة اسم الموقع ← البحث عن عنوانه عبر DNS ← إنشاء الاتصال ← إرسال طلب HTTPS ← استلام الصفحة.",tools:["Cisco Packet Tracer لتصميم الشبكات.","Wireshark لفهم حركة البيانات.","أوامر ping وipconfig لفحص الاتصال."]},
+      programming:{title:"💻 البرمجة",intro:"البرمجة كتابة تعليمات للحاسوب لتنفيذ مهام محددة، وتستخدم في تطوير المواقع والتطبيقات والأنظمة الذكية.",basics:["المتغيرات: تخزين القيم والبيانات.","الشروط: اتخاذ القرارات في البرنامج.","الحلقات: تكرار مجموعة من الأوامر.","الدوال: تنظيم الكود وإعادة استخدامه.","الخوارزميات: خطوات مرتبة لحل مشكلة."],example:'name = "Ahmed"\\nvoltage = 5\\nprint("Hello", name)\\nprint("Voltage =", voltage, "V")',tools:["Python لتعلم البرمجة.","لغة C لفهم البرمجة القريبة من الأجهزة.","Visual Studio Code لكتابة الأكواد.","Git وGitHub لحفظ المشاريع ومشاركتها."]},
+      communications:{title:"📡 أنظمة الاتصالات",intro:"تهتم بنقل المعلومات بين المرسل والمستقبل باستخدام الإشارات الكهربائية والموجات الكهرومغناطيسية والألياف الضوئية.",basics:["المرسل: يحول المعلومات إلى إشارة مناسبة للإرسال.","المستقبل: يستقبل الإشارة ويستخرج المعلومات.","التردد: عدد دورات الموجة في الثانية ويقاس بالهرتز.","التضمين: تغيير خاصية في الموجة الحاملة لنقل المعلومات.","الألياف الضوئية: تنقل البيانات باستخدام الضوء.","الضوضاء: إشارات غير مرغوبة قد تؤثر في جودة الاتصال."],example:"صوت المتحدث ← تحويل الصوت إلى بيانات ← إرسال البيانات عبر الشبكة ← استقبالها في الهاتف الآخر ← إعادة إنتاج الصوت.",tools:["MATLAB أو GNU Octave لدراسة الإشارات.","تعلم أساسيات Wi-Fi و5G.","دراسة الألياف الضوئية والتضمين."]},
+      security:{title:"🔐 أمن الشبكات",intro:"يهتم بحماية الحواسيب والخوادم وأجهزة الشبكة والبيانات من الوصول غير المصرح به، مع الحفاظ على السرية والسلامة والتوافر.",basics:["الجدار الناري: يتحكم في حركة الشبكة وفق قواعد.","التشفير: يحمي البيانات من القراءة غير المصرح بها.","التحقق من الهوية: يساعد على التأكد من هوية المستخدم.","المصادقة متعددة العوامل: تضيف خطوة تحقق إضافية.","النسخ الاحتياطي: يساعد على استعادة البيانات.","مبدأ أقل صلاحية: يمنح المستخدم ما يحتاجه فقط."],example:"لحماية شبكة منزلية: غيّر كلمة مرور الراوتر الافتراضية، استخدم كلمة قوية، فعّل WPA2 أو WPA3، وحدّث برنامج الراوتر بانتظام.",tools:["Wireshark لفهم حركة الشبكة.","Linux لتعلم أنظمة التشغيل.","تعلم TCP/IP وDNS وHTTPS.","مختبرات تدريبية قانونية للأمن السيبراني."]},
+      embedded:{title:"🤖 الأنظمة المدمجة",intro:"الأنظمة المدمجة حواسيب صغيرة تؤدي وظائف محددة داخل أجهزة مثل الروبوتات والسيارات والأجهزة المنزلية، وتجمع بين الإلكترونيات والبرمجة والتحكم.",basics:["المتحكم الدقيق: شريحة تنفذ برنامجاً للتحكم بالجهاز.","الحساس: يقيس متغيراً مثل الحرارة أو الضوء أو المسافة.","المشغل: ينفذ فعلاً مثل تشغيل محرك أو إضاءة LED.","GPIO: منافذ لقراءة الإشارات والتحكم بالمخارج.","Firmware: برنامج يعمل داخل الجهاز المدمج.","Arduino وESP32: منصتان شائعتان للتعلم وبناء النماذج."],example:"حساس يقيس درجة الحرارة ← المتحكم يقرأ القيمة ← يقارنها بالحد المحدد ← يشغّل مروحة عند الحاجة.",tools:["Arduino IDE لبرمجة المتحكمات.","Tinkercad لمحاكاة مشاريع أولية.","ESP32 وArduino للتجارب العملية.","حساسات ومحركات ولوحة تجارب."]}
     };
+    const articles = {
+      voltage:{title:"ما الفرق بين الجهد والتيار؟",body:"الجهد الكهربائي هو فرق الطاقة الكهربائية بين نقطتين، ويقاس بالفولت (V). أما التيار فهو معدل تدفق الشحنة الكهربائية ويقاس بالأمبير (A). تربط بينهما علاقة قانون أوم: V = I × R، حيث R هي المقاومة بالأوم. مثال: إذا وصل جهد 5V إلى مقاومة 100Ω فإن التيار النظري يساوي 0.05A."},
+      networks:{title:"كيف تعمل شبكات الحاسوب؟",body:"تتبادل الأجهزة البيانات عبر وسائط سلكية أو لاسلكية. تُقسّم البيانات إلى وحدات، وتستخدم عناوين وبروتوكولات لتصل إلى الوجهة الصحيحة. يعمل الموجّه على نقل البيانات بين الشبكات، بينما يربط المحوّل الأجهزة داخل الشبكة المحلية."},
+      c:{title:"لماذا تتعلم لغة C؟",body:"تمنحك لغة C فهماً جيداً للمتغيرات والذاكرة والمؤشرات وطريقة بناء البرامج. وهي مفيدة في الأنظمة المدمجة والبرمجة القريبة من العتاد، كما تساعدك على فهم مفاهيم تظهر في لغات أخرى."}
+    };
+    let currentLang="ar";
+    const modal=document.getElementById("detailModal");
+    const modalTitle=document.getElementById("modalTitle");
+    const modalBody=document.getElementById("modalBody");
+    function openModal(title,html){modalTitle.textContent=title;modalBody.innerHTML=html;modal.classList.add("show");modal.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";document.getElementById("closeModal").focus();}
+    function closeModal(){modal.classList.remove("show");modal.setAttribute("aria-hidden","true");document.body.style.overflow="";}
+    document.querySelectorAll("[data-topic]").forEach(btn=>btn.addEventListener("click",()=>{const t=topics[btn.dataset.topic];if(!t)return;openModal(t.title,`<p>${t.intro}</p><h3>أهم المفاهيم</h3><ul>${t.basics.map(x=>`<li>${x}</li>`).join("")}</ul><h3>مثال تطبيقي</h3><p>${t.example.replaceAll("\\n","<br>")}</p><h3>أدوات مفيدة</h3><ul>${t.tools.map(x=>`<li>${x}</li>`).join("")}</ul>`);}));
+    document.querySelectorAll("[data-article]").forEach(btn=>btn.addEventListener("click",()=>{const a=articles[btn.dataset.article];openModal(a.title,`<p>${a.body}</p>`);}));
+    document.getElementById("closeModal").addEventListener("click",closeModal);
+    modal.addEventListener("click",e=>{if(e.target===modal)closeModal();});
+    document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
 
-    const modal = document.getElementById("detailModal");
-    const modalTitle = document.getElementById("modalTitle");
-    const modalBody = document.getElementById("modalBody");
-    const closeModalButton = document.getElementById("closeModal");
-    let lastFocusedElement = null;
+    document.querySelectorAll(".faq-question").forEach(q=>q.addEventListener("click",()=>{const item=q.parentElement;item.classList.toggle("open");q.setAttribute("aria-expanded",item.classList.contains("open")?"true":"false");q.lastElementChild.textContent=item.classList.contains("open")?"−":"＋";}));
 
-    function openTopic(topicName) {
-      const topic = topics[topicName];
-      if (!topic) return;
+    const themeBtn=document.getElementById("themeBtn");
+    const savedTheme=localStorage.getItem("future-engineer-theme");
+    if(savedTheme==="light")document.body.classList.add("light");
+    themeBtn.textContent=document.body.classList.contains("light")?"🌙":"☀️";
+    themeBtn.addEventListener("click",()=>{document.body.classList.toggle("light");const light=document.body.classList.contains("light");themeBtn.textContent=light?"🌙":"☀️";localStorage.setItem("future-engineer-theme",light?"light":"dark");});
 
-      lastFocusedElement = document.activeElement;
-      modalTitle.textContent = topic.title;
-
-      modalBody.replaceChildren();
-
-      const addTextSection = (heading, text) => {
-        const h3 = document.createElement("h3");
-        h3.textContent = heading;
-        const p = document.createElement("p");
-        p.textContent = text;
-        modalBody.append(h3, p);
-      };
-
-      addTextSection("📘 التعريف", topic.intro);
-
-      const basicsHeading = document.createElement("h3");
-      basicsHeading.textContent = "🧠 أهم المفاهيم";
-      const basicsList = document.createElement("ul");
-      topic.basics.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = item;
-        basicsList.appendChild(li);
-      });
-      modalBody.append(basicsHeading, basicsList);
-
-      addTextSection("🎯 أهمية المجال", topic.importance);
-
-      const exampleHeading = document.createElement("h3");
-      exampleHeading.textContent = topic.exampleTitle;
-      const example = document.createElement("pre");
-      example.className = "code-example";
-      example.textContent = topic.example;
-      modalBody.append(exampleHeading, example);
-
-      addTextSection("💡 ملاحظة", topic.note);
-
-      const toolsHeading = document.createElement("h3");
-      toolsHeading.textContent = "🛠️ أدوات ومصادر للتعلم";
-      const toolsList = document.createElement("ul");
-      topic.tools.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = item;
-        toolsList.appendChild(li);
-      });
-      modalBody.append(toolsHeading, toolsList);
-
-      modal.classList.add("show");
-      modal.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-      closeModalButton.focus();
+    function setLanguage(lang){
+      currentLang=lang;document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";document.body.dir=lang==="ar"?"rtl":"ltr";
+      document.querySelectorAll("[data-ar][data-en]").forEach(el=>{const value=el.dataset[lang];if(value!==undefined)el.innerHTML=value;});
+      document.getElementById("langBtn").textContent=lang==="ar"?"EN":"عربي";
+      document.getElementById("menuBtn").setAttribute("aria-label",lang==="ar"?"فتح القائمة":"Open menu");
+      document.getElementById("toTop").setAttribute("aria-label",lang==="ar"?"العودة إلى الأعلى":"Back to top");
+      document.title=lang==="ar"?"مهندس المستقبل | هندسة الحاسوب والاتصالات":"Future Engineer | Computer & Communications Engineering";
     }
+    document.getElementById("langBtn").addEventListener("click",()=>setLanguage(currentLang==="ar"?"en":"ar"));
 
-    function closeModal() {
-      modal.classList.remove("show");
-      modal.setAttribute("aria-hidden", "true");
-      document.body.style.overflow = "";
-      if (lastFocusedElement) lastFocusedElement.focus();
+    const menuBtn=document.getElementById("menuBtn"),nav=document.getElementById("mainNav");
+    menuBtn.addEventListener("click",()=>{const open=nav.classList.toggle("open");menuBtn.setAttribute("aria-expanded",String(open));menuBtn.textContent=open?"×":"☰";});
+    nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menuBtn.setAttribute("aria-expanded","false");menuBtn.textContent="☰";}));
+
+    const sections=[...document.querySelectorAll("main section[id]")];
+    const navLinks=[...nav.querySelectorAll("a")];
+    const toTop=document.getElementById("toTop");
+    function onScroll(){
+      const y=window.scrollY+130;let current="home";
+      sections.forEach(s=>{if(s.offsetTop<=y)current=s.id;});
+      navLinks.forEach(a=>{a.classList.toggle("active",a.getAttribute("href")==="#"+current);});
+      toTop.classList.toggle("visible",window.scrollY>450);
     }
-
-    document.querySelectorAll("[data-topic]").forEach(element => {
-      element.addEventListener("click", () => openTopic(element.dataset.topic));
-      element.addEventListener("keydown", event => {
-        if (event.key === "Enter" || event.key === " ") {
-          event.preventDefault();
-          openTopic(element.dataset.topic);
-        }
-      });
-    });
-
-    closeModalButton.addEventListener("click", closeModal);
-    modal.addEventListener("click", event => {
-      if (event.target === modal) closeModal();
-    });
-    document.addEventListener("keydown", event => {
-      if (event.key === "Escape" && modal.classList.contains("show")) closeModal();
-    });
+    window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+    toTop.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}}),{threshold:.12});
+    document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+    document.getElementById("year").textContent=new Date().getFullYear();
   </script>
 </body>
 </html>
